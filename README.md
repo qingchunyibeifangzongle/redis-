@@ -1,4 +1,4 @@
-# seckill 秒杀系统
+﻿# seckill 秒杀系统
 ## 环境
 * php5.6 + phpredis扩展
 * redis服务
@@ -11,3 +11,6 @@
 3. **先从redis的商品库存队列中查询剩余库存**
 4. redis队列中有剩余，则在mysql中创建订单，去库存，抢购成功
 5. redis队列中没有剩余，则提示库存不足，抢购失败
+
+需要修改  Model.php  里面的数据库连接
+	  buy.php    路径
